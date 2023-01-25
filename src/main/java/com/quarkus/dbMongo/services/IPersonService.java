@@ -14,6 +14,6 @@ public interface IPersonService {
 
     String update(PersonDocument personDocument);
 
-    PersonDocument SavePerson(PersonDocument personDocument);
+    String SavePerson(PersonDocument personDocument);
 
 }

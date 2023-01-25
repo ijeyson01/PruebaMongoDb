@@ -42,9 +42,8 @@ public class AppController {
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Response updatePerson(PersonDocument personDocument){
-        service.update(personDocument);
-        return Response.ok("Actualizado correctamente")
-                .entity(service.findById(personDocument.getId()))
+       ;
+        return Response.ok( service.update(personDocument))
                 .build();
     }
 }
